@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Library\Library.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="pfrm_AltaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="pfrm_AltaAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="pfrm_AltaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sfrm_Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sfrm_Inscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sfrm_Examenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sfrm_Docentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sfrm_Calificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sfrm_Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sfrm_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
