@@ -8,7 +8,7 @@
 
 ### Descripción: Sistema tipo ABM de gestión académica.
 #### Funcionalidades:
-* Capa de persistencia con Base de Datos Microsoft MySQL.
+* Capa de persistencia con Base de Datos Microsoft SQL Server.
 * Sistema de Login mediante Base de Datos.
 * Serialización JSON, CSV.
 * Manejo de Excepciones.
